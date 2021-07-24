@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Curso HTML</title>
+	<style type="text/css">
+		body{
+			width:600px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h3>Cadastro de Freelancer</h3>
+	<p>
+	<form action="">
+	<fieldset>
+	<legend>Dados cadastrais</legend>
+	<label for="nome">Nome Completo*:</label>
+	<input type="text"
+	id="nome"
+	name="nome"
+	size="30"
+	maxlength="30"
+	placeholder="Insira seu nome completo"
+	required>
+	</p>
+
+	<p>
+	<label for="email">E-mail*:</label>
+	<input type="email"
+	name="email"
+	id="email"
+	required
+	autocomplete="off">
+	</p>
+	<p>
+	<label for="senha">Senha*:</label>
+	<input type="password"
+	name="senha"
+	id="senha"
+	required>
+	</fieldset>
+
+	<fieldset>
+	<legend>Dados pessoais</legend>
+	<p>
+	<label for="telefone">Telefone:</label>
+	<input type="tel"
+	name="telefone"
+	id="telefone"
+	placeholder="(12) 1234-5678"
+	maxlength="10">
+	</p>
+	<p>
+	<label for="data">Data de Nascimento</label>
+	<input type="date"
+	name="data"
+	id="data">
+	</p>
+    </fieldset>
+	<fieldset>
+	<legend>Interesses</legend>
+	<p>
+	Informativo:<br>
+	<input type="checkbox" name="qrn" id="qrn"> <label for="qrn">Quero receber noticias</label> <br>
+	<input type="checkbox" name="qra" id="qra"> <label for="qra">Quero receber anúncios</label>
+	</p>
+	Atendimento:<br>
+	<input type="radio" name="contratante" id="contratante" value="contratante"> <label for="contratante">Quero ser contratante</label> <br>
+	<input type="radio" name="contratado" id="contratado" value="contrato"> <label for="contratado">Quero ser contratado</label>
+	<p>
+	<label for="hsd">Horas semanais disponíveis:</label>
+	<input type="text" name="hsd" id="hsd" placeholder="0" size="4">
+	</p>
+</fieldset>
+
+	<fieldset>
+	<legend>Informações</legend>
+	<p>
+	<label for="apresentacao">Apresentação:</label><br>
+	<textarea name="apresentacao" id="apresentacao" cols="40" rows="5"></textarea> <br><br>
+	<label for="link">Link do portfolio:</label>
+	<input type="text" name="link" id="link">
+	</p>
+	<p>
+	Envie seu currículo:<br>
+	<input type="file" name="curriculo" id="curriculo">
+	</p>
+</fieldset>
+
+	<fieldset>
+	<legend>Atuação</legend>
+	<p>
+	<label for="area">Sua formação:</label>
+	<select name="area" id="area">
+	<option selected disabled>Escolha uma opção</option>
+	<option value="data">Design</option>
+	<option value="programacao">Programação</option>
+	<option value="marketing">Marketing</option>
+	<option value="dados">Dados</option>
+	</select>
+	</p>
+	<p>
+     <label for="especializacao">Sua especialização:</label>
+	<select name="especializacao" id="especializacao">
+		<option selected disabled>Escolha uma opção</option>
+		<optgroup label="Design">
+			<option value="UI design">UI design</option>
+			<option value="UX design">UX design</option>
+			<option value="UX research">UX research</option>
+			<option value="UX writing">UX writing</option>
+		</optgroup>
+		<optgroup label="Programação">
+			<option value="Back-end">Back-end</option>
+			<option value="Banco de dados">Banco de dados</option>
+			<option value="Front-end">Front-end</option>
+			<option value="Teste de software">Teste de software</option>
+		</optgroup>
+		<optgroup label="Marketing">
+			<option value="Growth hacking">Growth hacking</option>
+			<option value="Mídias sociais">Mídias sociais</option>
+			<option value="SEO">SEO</option>
+			<option value="Web analytics">Web analytics</option>
+		</optgroup>
+		<optgroup label="Dados">
+			<option value="Business intelligence">Business intelligence</option>
+			<option value="Big data">Big data</option>
+			<option value="Ciência de dados">Ciência de dados</option>
+			<option value="Inteligência artificial">Inteligência artificial</option>
+			<option value="Machine learning">Machine learning</option>
+		</optgroup>
+		
+	</select>
+	</p>
+	<p>
+		<label for="idioma">Idioma(Você pode escolher mais de uma opção)</label><br>
+		<select name="idioma" id="idioma" multiple>
+			<option value="pt">Português</option>
+			<option value="in">Inglês</option>
+			<option value="es">Espanhol</option>
+			<option value="man">Mandarim</option>
+		</select>
+	</p>
+	<p>
+		<label for="estado">Seu estado de inscrição:</label>
+		<select name="estado" id="estado">
+			<option selected disabled>Escolha uma opção</option>
+			<option value="ac">Acre</option>
+			<option value="al">Alagoas</option>
+			<option value="ap">Amapá</option>
+			<option value="am">Amazonas</option>
+			<option value="ba">Bahia</option>
+			<option value="ce">Ceará</option>
+			<option value="df">Distrito Federal</option>
+			<option value="es">Espírito Santo</option>
+			<option value="go">Goiás</option>
+			<option value="ma">Maranhão</option>
+			<option value="mt">Mato Grosso</option>
+			<option value="ms">Mato Grosso do Sul</option>
+			<option value="mg">Minas Gerais</option>
+			<option value="pa">Pará</option>
+			<option value="pb">Paraíba</option>
+			<option value="pr">Paraná</option>
+			<option value="pe">Pernambuco</option>
+			<option value="pi">Piauí</option>
+			<option value="rj">Rio de Janeiro</option>
+			<option value="rn">Rio Grande do Norte</option>
+			<option value="rs">Rio Grande do Sul</option>
+			<option value="ro">Rondônia</option>
+			<option value="rr">Roraima</option>
+			<option value="sc">Santa Catarina</option>
+			<option value="sp">São Paulo</option>
+			<option value="se">Sergipe</option>
+			<option value="to">Tocantins</option>
+		</select>
+	</p>
+	</fieldset>
+	<p>
+	<input type="submit" value="ENVIAR FORMULÁRIO">
+	</p>
+</form>
+</body>
+
+</html>
